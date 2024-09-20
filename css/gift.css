@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', cursive;
+}
+
+body {
+    background-color: black;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 120vh;
+    margin: 0;
+}
+
+.no {
+    font-size: 3rem;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.description {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #111;
+    padding-bottom: 100px;
+}
+
+.heart-shape {
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart-shape img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Position each image based on the heart shape formula */
+.heart-shape img:nth-child(1) { transform: translate(0px, -135px); }
+.heart-shape img:nth-child(2) { transform: translate(-40px, -200px); }
+.heart-shape img:nth-child(3) { transform: translate(-90px, -260px); }
+.heart-shape img:nth-child(4) { transform: translate(-170px, -275px); }
+.heart-shape img:nth-child(5) { transform: translate(-240px, -250px); }
+.heart-shape img:nth-child(6) { transform: translate(-300px, -200px); }
+.heart-shape img:nth-child(7) { transform: translate(-310px, -125px); }
+.heart-shape img:nth-child(8) { transform: translate(-300px, -55px); }
+.heart-shape img:nth-child(9) { transform: translate(-280px, 15px); }
+.heart-shape img:nth-child(10) { transform: translate(-245px, 85px); }
+.heart-shape img:nth-child(11) { transform: translate(-195px, 145px); }
+.heart-shape img:nth-child(12) { transform: translate(-135px, 195px); }
+.heart-shape img:nth-child(14) { transform: translate(-70px, 240px); }
+.heart-shape img:nth-child(13) { transform: translate(0px, 275px); }
+.heart-shape img:nth-child(15) { transform: translate(70px, 240px); }
+.heart-shape img:nth-child(16) { transform: translate(135px, 195px); }
+.heart-shape img:nth-child(17) { transform: translate(195px, 145px); }
+.heart-shape img:nth-child(18) { transform: translate(245px, 85px); }
+.heart-shape img:nth-child(19) { transform: translate(280px, 15px); }
+.heart-shape img:nth-child(20) { transform: translate(300px, -55px); }
+.heart-shape img:nth-child(21) { transform: translate(310px, -125px); }
+.heart-shape img:nth-child(22) { transform: translate(300px, -200px); }
+.heart-shape img:nth-child(23) { transform: translate(240px, -250px); }
+.heart-shape img:nth-child(24) { transform: translate(170px, -275px); }
+.heart-shape img:nth-child(25) { transform: translate(90px, -260px); }
+.heart-shape img:nth-child(26) { transform: translate(40px, -200px); }
+
+@media (max-width: 768px) {
+    .heart-shape {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .heart-shape img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .description {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .button a {
+        font-size: 1.2rem;
+    }
+}
+
+/* Untuk layar yang lebih kecil dari 480px (ponsel kecil) */
+@media (max-width: 480px) {
+    .description {
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+
+    .button a {
+        font-size: 1.2rem;
+    }
+    
+    .heart-shape {
+        width: 400px;
+        height: 400px;
+    }
+
+    .heart-shape img {
+        width: 40px;
+        height: 40px;
+    }
+    .heart-shape img:nth-child(1) { transform: translate(0%, -145%); }
+    .heart-shape img:nth-child(2) { transform: translate(-50%, -220%); }
+    .heart-shape img:nth-child(3) { transform: translate(-100%, -290%); }
+    .heart-shape img:nth-child(4) { transform: translate(-190%, -315%); }
+    .heart-shape img:nth-child(5) { transform: translate(-280%, -280%); }
+    .heart-shape img:nth-child(6) { transform: translate(-330%, -200%); }
+    .heart-shape img:nth-child(7) { transform: translate(-335%, -105%); }
+    .heart-shape img:nth-child(8) { transform: translate(-310%, -15%); }
+    .heart-shape img:nth-child(9) { transform: translate(-270%, 75%); }
+    .heart-shape img:nth-child(10) { transform: translate(-220%, 160%); }
+    .heart-shape img:nth-child(11) { transform: translate(-150%, 230%); }
+    .heart-shape img:nth-child(12) { transform: translate(-80%, 290%); }
+    .heart-shape img:nth-child(13) { transform: translate(0%, 340%); }
+    .heart-shape img:nth-child(14) { transform: translate(80%, 290%); }
+    .heart-shape img:nth-child(15) { transform: translate(150%, 230%); }
+    .heart-shape img:nth-child(16) { transform: translate(220%, 160%); }
+    .heart-shape img:nth-child(17) { transform: translate(270%, 75%); }
+    .heart-shape img:nth-child(18) { transform: translate(310%, -15%); }
+    .heart-shape img:nth-child(19) { transform: translate(335%, -105%); }
+    .heart-shape img:nth-child(20) { transform: translate(330%, -200%); }
+    .heart-shape img:nth-child(21) { transform: translate(280%, -280%); }
+    .heart-shape img:nth-child(22) { transform: translate(190%, -315%); }
+    .heart-shape img:nth-child(23) { transform: translate(100%, -290%); }
+    .heart-shape img:nth-child(24) { transform: translate(50%, -220%); }
+    .heart-shape img:nth-child(25) { transform: translate(-280%, -280%); }
+    .heart-shape img:nth-child(26) { transform: translate(-50%, -220%); }
+}
