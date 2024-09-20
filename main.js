@@ -4,7 +4,7 @@ onload = () =>{
 // Memutar audio otomatis saat halaman dimuat
 window.addEventListener('DOMContentLoaded', () => {
         const audio = document.getElementById('audio');
-        audio.volume = 0.5;
+        audio.volume = 0.7;
         audio.play().catch(error => {
             console.log('Autoplay tidak diizinkan oleh browser:', error);
         });
